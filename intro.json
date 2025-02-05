@@ -1,5 +1,9 @@
 {
-    "title": "Intro Here",
-    "contact": {},
-    "version": "1.0"
+  "title": "Welcome to Middleware API",
+  "description": "This API provides middleware services for authentication, payments, and data processing. It allows seamless integration with multiple systems.",
+  "contact": {
+    "name": "Support Team",
+    "email": "support@example.com",
+    "url": "https://api-mw.example.com/support"
+  }
 }
