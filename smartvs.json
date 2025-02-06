@@ -3,6 +3,7 @@
     "info": {
         "title": "Welcome to Middleware API",
         "description": "This API provides middleware services for authentication, payments, and data processing. It allows seamless integration with multiple systems.",
+        "termsOfService": "http://swagger.io/terms/",
         "contact": {
             "name": "Support Team",
             "email": "support@example.com",
