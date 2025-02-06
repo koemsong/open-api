@@ -1,5 +1,5 @@
 {
-    "openapi": "3.0.0",
+    "openapi": "3.0.2",
     "info": {
         "title": "Welcome to Middleware API",
         "description": "This API provides middleware services for authentication, payments, and data processing. It allows seamless integration with multiple systems.",
