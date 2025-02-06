@@ -1,5 +1,6 @@
 openapi: 3.0.0
 info:
+
   title: "Phillip Bank API Gateway"
   version: "1.0.0"
   description: |
@@ -7,12 +8,12 @@ info:
     This API provides secure middleware services for authentication, payments, and data processing.
 
     ### 🔹 Some Useful Guides:
-    - **Get Access Token**
-    - **Access APIs through the gateway with a valid Token**
+    - Get Access Token with **consumer-key & consumer-secre** (Will provide by bank)
+    - Access APIs through the gateway with a valid Token
 
     ### 🌐 API Base URLs:
-    - [Production](https://apicp.phillipbank.com.kh)
-    - [UAT](https://apicp-uat.phillipbank.com.kh)
+    - To Generate Token: https://apicp-uat.phillipbank.com.kh
+    - To Access APIs: https://apigw-uat.phillipbank.com.kh
 
     ### 🔐 Authentication & Security:
     - 🔐 **OAuth 2.0** - Recommended for secure access.
@@ -23,25 +24,6 @@ info:
     - Access tokens expire **in 60 minutes**.
     - Refresh tokens allow **re-authentication without login**.
 
-    ### 🛠 Example: Request an Access Token
-    ```bash
-    curl --location 'https://apicp-uat.phillipbank.com.kh/oauth2/token' \
-    --header 'Authorization: Basic Base64(consumer-key:consumer-secret)' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "grant_type": "client_credentials"
-    }'
-    ```
-
-    ### ✅ Example Response:
-    ```json
-    {
-        "access_token": "eyJ4NXQiOiJOMkpqTWpOaU0yR...",
-        "scope": "default",
-        "token_type": "Bearer",
-        "expires_in": 3600
-    }
-    ```
   contact:
     name: "Support Team"
     url: "https://phillipbank.com.kh/support"
