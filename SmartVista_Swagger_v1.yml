@@ -1,8 +1,52 @@
 openapi: 3.0.0
 info:
-  title: SmartVistatAPI
-  contact: {}
-  version: '1.0'
+  title: "Phillip Bank API Gateway"
+  version: "1.0.0"
+  description: |
+    ## Welcome to Phillip Bank Middleware API
+    This API provides secure middleware services for authentication, payments, and data processing.
+
+    ### 🔹 Some Useful Guides:
+    - **Get Access Token**
+    - **Access APIs through the gateway with a valid Token**
+
+    ### 🌐 API Base URLs:
+    - [Production](https://apicp.phillipbank.com.kh)
+    - [UAT](https://apicp-uat.phillipbank.com.kh)
+
+    ### 🔐 Authentication & Security:
+    - 🔐 **OAuth 2.0** - Recommended for secure access.
+    - 🔑 **API Key Authentication** - Available for internal services.
+    - 📜 **JWT (JSON Web Token)** - Stateless token-based authentication.
+
+    ### 🔄 Token Expiry and Refresh:
+    - Access tokens expire **in 60 minutes**.
+    - Refresh tokens allow **re-authentication without login**.
+
+    ### 🛠 Example: Request an Access Token
+    ```bash
+    curl --location 'https://apicp-uat.phillipbank.com.kh/oauth2/token' \
+    --header 'Authorization: Basic Base64(consumer-key:consumer-secret)' \
+    --header 'Content-Type: application/json' \
+    --data '{
+        "grant_type": "client_credentials"
+    }'
+    ```
+
+    ### ✅ Example Response:
+    ```json
+    {
+        "access_token": "eyJ4NXQiOiJOMkpqTWpOaU0yR...",
+        "scope": "default",
+        "token_type": "Bearer",
+        "expires_in": 3600
+    }
+    ```
+  contact:
+    name: "Support Team"
+    url: "https://phillipbank.com.kh/support"
+    email: "support@phillipbank.com.kh"
+
 servers:
   - url: http://mi-sit.phillipbank.com.kh/v1/sv
     variables: {}
