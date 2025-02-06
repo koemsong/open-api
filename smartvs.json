@@ -1,13 +1,14 @@
 {
-    "openapi": "3.0.2",
+    "openapi": "3.0.0",
     "info": {
-        "title": "Welcome to Middleware API",
-        "description": "This API provides middleware services for authentication, payments, and data processing. It allows seamless integration with multiple systems.",
-        "termsOfService": "http://swagger.io/terms/",
+        "title": "Phillip Bank - OpenAPI (1.0.0)",
+        "version": "1.0.19",
+        "description": "### Welcome to Middleware API\n\nThis API provides middleware services for authentication, payments, and data processing.\n\n#### Example API Request Using cURL:\n```bash\ncurl -X GET \"https://api-mw.example.com/users/me\" \\\n     -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\"\n```",
+        "termsOfService": "",
         "contact": {
             "name": "Support Team",
-            "email": "support@example.com",
-            "url": "https://api-mw.example.com/support"
+            "email": "it_integration@phillipbank.com.kh",
+            "url": "https://phillipbank.com.kh"
         }
     },
     "servers": [
